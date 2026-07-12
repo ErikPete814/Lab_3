@@ -8,7 +8,7 @@
 
 //function to find the maximum value
 
-int findMaxOfTen(const int (&arr)[10]) {
+int findMaxOfTen(int (arr)[10]) {
     int maxVal = arr[0];
     for (int i = 1; i < 10; i++) {
         if (arr[i] > maxVal) {
@@ -21,7 +21,7 @@ int findMaxOfTen(const int (&arr)[10]) {
 
 //function to find the minimum value
 
-int findMinOfTen(const int (&arr)[10]) {
+int findMinOfTen(int (arr)[10]) {
     int minVal = arr[0];
     for (int i = 1; i < 10; i++) {
         if (arr[i] < minVal) {
@@ -34,7 +34,7 @@ int findMinOfTen(const int (&arr)[10]) {
 
 //function to calculate the average
 
-int findAverageOfTen(const int (&arr)[10]) {
+int findAverageOfTen(int(arr)[10]) {
     int sum=arr[0];
     for (int i = 1; i < 10; i++) {
         sum=sum+arr[i];
@@ -46,7 +46,7 @@ int findAverageOfTen(const int (&arr)[10]) {
 
 //function to calculate how many are passing
 
-int findNumberPassing(const int (&arr)[10]) {
+int findNumberPassing(int(arr)[10]) {
     int peoplePassing=0;
     for (int i = 0; i < 10; i++) {
         if (arr[i]>=70)
@@ -57,7 +57,7 @@ int findNumberPassing(const int (&arr)[10]) {
 
 //function to calculate the sum of all scores
 
-int findSumScores(const int (&arr)[10]) {
+int findSumScores(int(arr)[10]) {
     int sumOfScores=arr[0];
     for (int i = 1; i < 10; i++) {
         sumOfScores=sumOfScores+arr[i];
@@ -80,6 +80,7 @@ int main() {
     //run the numbers through each function and print the results
     
     std::cout << "" << std::endl;
+    
     std::cout << "Class Statistics: " << std::endl;
     
     
