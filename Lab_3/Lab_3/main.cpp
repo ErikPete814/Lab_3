@@ -5,6 +5,7 @@
 //  Created by Erik Petersen on 7/8/26.
 //
 #include <iostream>
+#include <iomanip>
 
 //function to find the maximum value
 
@@ -34,12 +35,12 @@ int findMinOfTen(int (arr)[10]) {
 
 //function to calculate the average
 
-int findAverageOfTen(int(arr)[10]) {
-    int sum=arr[0];
+double findAverageOfTen(int(arr)[10]) {
+    double sum=arr[0];
     for (int i = 1; i < 10; i++) {
         sum=sum+arr[i];
     }
-    int averageOfTen=sum /10;
+    double averageOfTen=sum /10;
     return averageOfTen;
     
 }
@@ -80,6 +81,8 @@ int main() {
     //run the numbers through each function and print the results
     
     std::cout << "" << std::endl;
+    
+    std::cout << std::fixed << std::setprecision(2);
     
     std::cout << "Class Statistics: " << std::endl;
     
