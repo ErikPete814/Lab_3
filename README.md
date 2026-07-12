@@ -34,3 +34,5 @@ This C++ program simulates a teacher entering the scores of 10 students. The pro
    * Lowest score
    * Average score
    * Number of students passing
+  
+   youtube link: https://youtu.be/KRd2MC1jurg 
